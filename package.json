@@ -1,0 +1,24 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "fullstack friend finder app using node, express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemarq/friendFinder.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "John-Mike Marquardt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codemarq/friendFinder/issues"
+  },
+  "homepage": "https://github.com/codemarq/friendFinder#readme"
+}
