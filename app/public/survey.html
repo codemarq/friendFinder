@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Friend Finder Survey</title>
+	<meta charset="utf-8">
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- mobile responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<header class="jumbotron">
+			<h1><span class="glyphicon glyphicon-bed"></span> Friend Finder Survey</h1>
+			<hr>
+			<h2>Please answer the survey below.</h2>
+			<br>
+			<a href="/home"><button type="button" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-home"></span> Home</button></a>
+		</header>
+		<main>
+			<form class="well">
+				<h3>About You</h3>
+				<hr>
+				<div class="form-group">
+					<label for="name">Name (Required)</label>
+					<input type="text" class="form-control" name="name" placeholder="John Doe">
+				</div>
+				<div class="form-group">
+				<label for="photoUrl">Link to Photo Image (Required)</label>
+					<input type="text" class="form-control" name="photoUrl" placeholder="www.photoOfme.com">
+				</div>
+				<div id="questions">
+					
+				</div>
+			</form>
+		</main>
+	
+		<footer class="footer">
+			<!-- Links:  -->
+			<a href="/api/friends" id="apiFriends">API Friends List</a>
+			|
+			<a href="https://github.com/codemarq/friendFinder">GitHub Repo</a>
+			<br>
+			&copy; 2016 John-Mike Marquardt
+		</footer>
+	</div>
+</body>
+</html>
