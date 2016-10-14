@@ -3,8 +3,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var routes = require('./routing/html-routes');
-var api = require('./routing/api-routes');
+var routes = require('./app/routing/html-routes');
+var api = require('./app/routing/api-routes');
 
 // Sets up the Express App
 // =============================================================
@@ -21,7 +21,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 routes(app);
 api(app);
 // makes static assets in the public folder available (style.css)
-app.use(express.static('public'));
+app.use(express.static('app/public'));
 
 // Starts the server to begin listening
 // =============================================================
