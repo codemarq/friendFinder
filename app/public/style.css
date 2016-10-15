@@ -1,9 +1,12 @@
 body {
-	background-color: #3367d6;
+	/*background-color: #3367d6;*/
+	background-color: #224daa;
+	margin-bottom: 60px;
 }
 
 .jumbotron {
 	text-align: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
@@ -33,4 +36,5 @@ h3 {
 
 .well {
 	background-color: #eeeeee;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
