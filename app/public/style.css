@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	/*background-color: #3367d6;*/
 	background-color: #224daa;
