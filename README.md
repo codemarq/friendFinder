@@ -1,5 +1,6 @@
 # Friend Finder
-FullStack "Friend Finder" app using express, node.js, HTML, CSS
+FullStack "Friend Finder" app using express, node.js, HTML, CSS.
+
 
 ## Screenshot
 
@@ -9,7 +10,7 @@ Home Page
 
 Survey Page
 
-![ScreenShot](screenshot-survey.pmg "Survey")
+![ScreenShot](screenshot-survey.png "Survey")
 
 
 ## Technologies Used
@@ -19,6 +20,7 @@ Survey Page
 - CSS
 - jQuery
 - Bootstrap
+
 
 ## Dependencies
 
@@ -31,15 +33,19 @@ Survey Page
 	- body-parser
 ```
 
+
 ## Run
 ```
 node server.js
 ```
 
-then navigate to localhost:3000 in browser
-
+then navigate to 
+```
+localhost:3000 in browser
+```
 
 You should be able to click the survey button to navigate to the survey form.  Fill out all of the required feilds on the survey form and click submit.  A Modal will pop-up with your superhero match.
+
 
 ## API's
 
@@ -48,8 +54,10 @@ localhost:3000/api/friends
 ```
 Returns the friends data in JSON format to the browser.
 
+
 ## Built with
 - Sublime
+
 
 ## Author
 John-Mike Marquardt &copy; 2016
