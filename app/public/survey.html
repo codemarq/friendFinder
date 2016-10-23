@@ -45,11 +45,11 @@
 				<hr>
 				<div class="form-group">
 					<label for="name">Name (Required)</label>
-					<input type="text" class="form-control" name="name" placeholder="John Doe" require="">
+					<input type="text" class="form-control" id="userName" name="name" placeholder="John Doe" require="">
 				</div>
 				<div class="form-group">
 				<label for="photoUrl">Link to Photo Image (Required)</label>
-					<input type="text" class="form-control" name="photoUrl" placeholder="www.photoOfme.com">
+					<input type="text" class="form-control" id="photo" name="photoUrl" placeholder="photo Url">
 				</div>
 				<hr>
 				<div id="questions">
@@ -231,28 +231,30 @@
 	    $("#submit").on("click", function(){
 
 	    	// Form validation
-	    	function validateForm() {
-			  var isValid = true;
-			  $('.form-control').each(function() {
-			    if ( $(this).val() === '' ) {
-			    	isValid = false;
-			    }
-			  });
+	    	function validateForm () {
+				
+				var complete = true;
+				$('.form-control').each(function () {
+			    	if ( $(this).val() === '' ) {
+			    		complete = false;
+			    	}
+			  	});
 
-			  $('.chosen-select').each(function() {
+				$('.chosen-select').each(function() {
 
-			  	if ($(this).val() === "") {
-			  		isValid = false;
-			  	}
-			  });
-			  return isValid;
+			  		if ($(this).val() === "") {
+			  			complete = false;
+			  		}
+			  	});
+
+			  	return complete;
 			};
 
 			// If all required fields are filled
 			if (validateForm() == true) {
 				// Create an object for the user's data
-		    	var userData = {
-		    		name: $("#name").val(),
+		    	var formData = {
+		    		name: $("#userName").val(),
 		    		photo: $("#photo").val(),
 		    		scores: [
 		    			$("#q1").val(), 
@@ -273,7 +275,7 @@
 		    	var currentURL = window.location.origin;
 
 		    	// AJAX post the data to the friends API. 
-		    	$.post(currentURL + "/api/friends", userData, function(data){
+		    	$.post(currentURL + "/api/friends", formData, function (data) {
 
 		    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 		    		$("#matchName").text(data.name);
@@ -283,9 +285,10 @@
 			    	$("#resultsModal").modal('toggle');
 
 		    	});
-			} else 	{
+
+			} else {
 				alert("Please fill out all fields before submitting!");
-			}
+			};
 	    	
 	    	return false;
 	    });
