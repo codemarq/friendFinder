@@ -60,4 +60,4 @@ Returns the friends data in JSON format to the browser.
 
 
 ## Author
-John-Mike Marquardt &copy; 2016
+&copy; 2016 John-Mike Marquardt [Github](https://github.com/codemarq) | [jmmarquardt.com](https://jmmarquardt.com) | [LinkedIn](https://www.linkedin.com/in/jmmarquardt)
